@@ -9,9 +9,15 @@ public class login
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
 		
-		driver.get("http://www.differencebetween.net/technology/difference-between-cvs-and-svn/");
+		driver.get("https://www.facebook.com/");
 		driver.manage().window().maximize();
+		
+		driver.navigate().to("https://www.google.com/");
 		Thread.sleep(1000);
+		
+		driver.navigate().back();
+		Thread.sleep(1000);
+		
 		
 		driver.close();
 	}
