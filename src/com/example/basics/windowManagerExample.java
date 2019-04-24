@@ -1,6 +1,7 @@
 package com.example.basics;
 
 
+import org.openqa.selenium.Point;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class windowManagerExample 
@@ -17,6 +18,13 @@ public class windowManagerExample
 			org.openqa.selenium.Dimension d = new org.openqa.selenium.Dimension(500, 1000);
 			driver.manage().window().setSize(d);
 			Thread.sleep(1000);
+			
+			
+			
+			//set position of the window
+			Point p = new Point(500, 500);
+			driver.manage().window().setPosition(p);
+			
 	}
 
 }
